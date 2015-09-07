@@ -1,6 +1,8 @@
-#include "pins.h"
 #include "Pitches.h"
 #include "MusicPlayer.h"
+
+// DEFINE YOUR PIN
+#define BUZZER_PIN A4
 
 
 #define WIN_TRACK    0
@@ -44,8 +46,8 @@ void setup() {
   Serial.begin(9600);      // open the serial port at 9600 bps for Debug Output: 
   music.init(true);
  
-  //music.playTrack(starWars, STAR_WARS_NUM);
-  music.playTrack(note, 1);
+  music.playTrack(starWars, STAR_WARS_NUM);
+  //music.playTrack(note, 1);
 }
 
 void loop() {
